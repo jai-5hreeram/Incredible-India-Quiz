@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India Quiz</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div id="setup-screen">
+            <h1>Incredible India Quiz</h1>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div class="timer-container">
+                Time Left: <span id="timer-seconds">15</span>s
+            </div>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <h2 id="question-text">Question goes here?</h2>
+            <div id="answer-buttons" class="btn-grid">
+            </div>
+            <div id="controls">
+                <p>Score: <span id="current-score">0</span></p>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h2>Quiz Completed!</h2>
+            <p id="final-stat"></p>
+            <div id="answers-review" class="review-list"></div>
+            <button onclick="location.reload()">Restart</button>
+        </div>
+    </div>
+    <script src="j.js"></script>
+</body>
+
+</html>
